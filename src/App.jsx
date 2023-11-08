@@ -8,7 +8,7 @@ const App = () => {
         <header className="container mx-auto px-4">
           <div className="flex justify-between pt-8">
             <h1 className="uppercase text-2xl text-white font-bold tracking-[0.3em]">
-              Todo
+              Todo App
             </h1>
             <button>
               <MoonIcon fill={"#fff"} />
