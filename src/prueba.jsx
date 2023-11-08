@@ -8,10 +8,10 @@ const App = () => {
         <header className="container mx-auto px-4">
           <div className="flex justify-between pt-8">
             <h1 className="uppercase text-2xl text-white font-bold tracking-[0.3em]">
-              Todo
+              Todo App
             </h1>
             <button>
-              <MoonIcon />
+              <MoonIcon fill={"#fff"} />
             </button>
           </div>
           <form className="flex items-center gap-4 bg-white rounded-md overflow-hidden py-4 px-4 mt-8">
@@ -23,79 +23,74 @@ const App = () => {
             />
           </form>
         </header>
+        {/* Aqui iba */}
 
         <main className="container mx-auto px-4 mt-8">
-          <div className="bg-white rounded-md">
-            <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
+          <div className="bg-white rounded-md [&>article]:p-4">
+            <article className="flex gap-4 border-b-gray-400 border-b">
               <button className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-              <p className="grow text-gray-400 text-sm">
+              <p className="text-gray-400 grow text-xs">
                 Complete online JavaScript course
               </p>
               <button className="flex-none">
                 <CrossIcon />
               </button>
             </article>
-            <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
+            <article className="flex gap-4 border-b-gray-400 border-b">
               <button className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-              <p className="grow text-gray-400 text-sm">
+              <p className="text-gray-600 grow text-xs">
                 Jog around the park 3x
               </p>
               <button className="flex-none">
                 <CrossIcon />
               </button>
             </article>
-            <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
+            <article className="flex gap-4 border-b-gray-400 border-b">
               <button className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-              <p className="grow text-gray-400 text-sm">
+              <p className="text-gray-600 grow text-xs">
                 10 minutes meditation
               </p>
               <button className="flex-none">
                 <CrossIcon />
               </button>
             </article>
-            <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
+            <article className="flex gap-4 border-b-gray-400 border-b">
               <button className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-              <p className="grow text-gray-400 text-sm">Read for 1 hour</p>
+              <p className="text-gray-600 grow text-xs">Read for 1 hour</p>
               <button className="flex-none">
                 <CrossIcon />
               </button>
             </article>
-            <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
+            <article className="flex gap-4 border-b-gray-400 border-b">
               <button className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-              <p className="grow text-gray-400 text-sm">Pick up groceries</p>
+              <p className="text-gray-600 grow text-xs">Pick uo groceries</p>
               <button className="flex-none">
                 <CrossIcon />
               </button>
             </article>
-            <article className="flex gap-4 border-b border-b-gray-400 px-4 py-4">
+            <article className="flex gap-4 border-b-gray-400 border-b">
               <button className="inline-block h-5 w-5 rounded-full border-2 flex-none"></button>
-              <p className="grow text-gray-400 text-sm">
+              <p className="text-gray-600 grow text-xs">
                 Complete Todo App on Frontend Mentor
               </p>
               <button className="flex-none">
                 <CrossIcon />
               </button>
             </article>
-            <section className="flex justify-between px-4 py-4 text-gray-300 text-sm">
-              <span className="">5 items left</span>
+            <section className="py-4 px-4 text-gray-600 flex justify-between">
+              <span>5 items left</span>
               <button>Clear Completed</button>
             </section>
           </div>
 
-          <div className="bg-white rounded-md container mx-auto px-4 py-4 mt-8">
+          <div className="bg-white rounded-md container mx-auto p-4 mt-8">
             <section className="flex justify-center gap-4">
-              <button className="text-blue-500 font-semibold text-sm">
-                All
-              </button>
-              <button className="text-gray-400 font-semibold text-sm">
-                Active
-              </button>
-              <button className="text-gray-400 font-semibold text-sm">
-                Completed
-              </button>
+              <button className="text-blue-500">All</button>
+              <button>Active</button>
+              <button>Completed</button>
             </section>
           </div>
-          <p className="flex justify-center py-10 text-gray-400">
+          <p className="text-center p-8 text-gray-500">
             Drag and drop to reorder list
           </p>
         </main>
